@@ -13,6 +13,8 @@
 		FE0B6C411F78F6BE008C6608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0B6C401F78F6BE008C6608 /* Assets.xcassets */; };
 		FE0B6C441F78F6BE008C6608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0B6C421F78F6BE008C6608 /* LaunchScreen.storyboard */; };
 		FE0B6C471F78F6BE008C6608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0B6C461F78F6BE008C6608 /* main.m */; };
+		FE0B6C501F78FB15008C6608 /* InteractiveChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0B6C4F1F78FB15008C6608 /* InteractiveChartView.m */; };
+		FE0B6C541F7A73E0008C6608 /* TransactionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0B6C531F7A73E0008C6608 /* TransactionItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		FE0B6C431F78F6BE008C6608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE0B6C451F78F6BE008C6608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE0B6C461F78F6BE008C6608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE0B6C4E1F78FB15008C6608 /* InteractiveChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveChartView.h; sourceTree = "<group>"; };
+		FE0B6C4F1F78FB15008C6608 /* InteractiveChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveChartView.m; sourceTree = "<group>"; };
+		FE0B6C521F7A73E0008C6608 /* TransactionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionItem.h; sourceTree = "<group>"; };
+		FE0B6C531F7A73E0008C6608 /* TransactionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		FE0B6C361F78F6BE008C6608 /* InteractiveChart */ = {
 			isa = PBXGroup;
 			children = (
+				FE0B6C511F7A7325008C6608 /* ViewModels */,
+				FE0B6C4D1F78F74B008C6608 /* Chart */,
 				FE0B6C371F78F6BE008C6608 /* AppDelegate.h */,
 				FE0B6C381F78F6BE008C6608 /* AppDelegate.m */,
 				FE0B6C3A1F78F6BE008C6608 /* ViewController.h */,
@@ -69,6 +77,24 @@
 				FE0B6C461F78F6BE008C6608 /* main.m */,
 			);
 			path = InteractiveChart;
+			sourceTree = "<group>";
+		};
+		FE0B6C4D1F78F74B008C6608 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				FE0B6C4E1F78FB15008C6608 /* InteractiveChartView.h */,
+				FE0B6C4F1F78FB15008C6608 /* InteractiveChartView.m */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		FE0B6C511F7A7325008C6608 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FE0B6C521F7A73E0008C6608 /* TransactionItem.h */,
+				FE0B6C531F7A73E0008C6608 /* TransactionItem.m */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0B6C501F78FB15008C6608 /* InteractiveChartView.m in Sources */,
+				FE0B6C541F7A73E0008C6608 /* TransactionItem.m in Sources */,
 				FE0B6C3C1F78F6BE008C6608 /* ViewController.m in Sources */,
 				FE0B6C471F78F6BE008C6608 /* main.m in Sources */,
 				FE0B6C391F78F6BE008C6608 /* AppDelegate.m in Sources */,
@@ -281,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HYHW2FP8VJ;
 				INFOPLIST_FILE = InteractiveChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.InteractiveChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HYHW2FP8VJ;
 				INFOPLIST_FILE = InteractiveChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.InteractiveChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
